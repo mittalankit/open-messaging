@@ -28,4 +28,4 @@ The platform requires a Dovecot IMAP server. See _src/test/resources/config_ for
 
 = Asterisk =
 
-The system requires a patched asterisk installation due to digium bugs. See _src/main/asterisk_patches_ for more information.
+The system requires a very recent ([https://issues.asterisk.org/jira/browse/17871 bug 17871 fixed]) or a patched asterisk 1.6 installation. See _src/main/asterisk_patches_ for more information.
