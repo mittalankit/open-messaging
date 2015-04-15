@@ -1,0 +1,29 @@
+# Introduction #
+
+open-messaging is built using maven2, so all you need is a [maven2](http://maven.apache.org/) installation.
+
+
+# Compiling #
+
+There is currently one project
+  * voicemail
+
+If you would like to hack on open-messagin, you should build that project. Do the following:
+
+```
+mkdir workspace
+cd workspace
+svn co https://acoveo.com/svnroot/business/voicemail/trunk/voicemailple
+cd voicemail
+mvn eclipse:eclipse install
+```
+
+You can then import the project as an _existing project_ into eclipse. If you are using [m2eclipse](http://eclipse.org/m2e/), you can skip the _eclipse:eclipse_ goal and import the project as a _maven project_ instead.
+
+# IMAP Server #
+
+The platform requires a Dovecot IMAP server. See _src/test/resources/config_ for relevant configuration files.
+
+# Asterisk #
+
+The system requires a very recent ([bug 17871 fixed](https://issues.asterisk.org/jira/browse/17871)) or a patched asterisk 1.6 installation. See _src/main/asterisk\_patches_ for more information.
